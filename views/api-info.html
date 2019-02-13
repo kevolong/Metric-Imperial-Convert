@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  
+  <head>
+      <title>Metric/Imperial Converter: API Documentation</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+      <link href="api_style.css" rel="stylesheet" type="text/css">
+   </head>
+  
+  <body>
+    
+    <header>Metric/Imperial Converter 
+      <br>REST API</header>
+    
+    <main>
+      <div id="api-doc">
+        <h2>API Documentation</h2>
+        
+        <p>Metric/Imperial Converter converts between select metric and imperial units.</p>
+        <h4>GET a converted unit:</h4>
+          <p class="tabbed">Use the endpoint: "https://fcc-metimp-convert-kl.glitch.me/api/convert?[query]"</p>
+          <p class="tabbed">Request query must have property name "input" and contain a valid number and unit.</p>
+            <p class="double-tabbed"><em>Ex: "https://fcc-metimp-convert-kl.glitch.me/api/convert?input=3gal"</em></p>
+          <p class="tabbed">Accepted units: gal, L, mi, km, lbs, kg.</p>
+        <p class="tabbed">If the post is succesful, a JSON object will be returned with properties <em>initNum</em>, <em>initUnit</em>, <em>returnNum</em>, <em>returnUnit</em> and <em>string</em>.</p>
+            <p class="double-tabbed"><em>Ex: { "initNum": 3,<br>"initUnit": "gal",<br>"returnNum": 11.35623,<br>"returnUnit": "L",<br>"string": "3 gallons converts to 11.35623 liters" }</em></p>
+      </div>
+      
+      
+      
+    </main>
+  
+    <footer id="by-kevin">
+      by <a href="https://codepen.io/kevolong/" target = "_blank">kevin long</a>
+    </footer>
+    
+  </body>
+    
+  </html>

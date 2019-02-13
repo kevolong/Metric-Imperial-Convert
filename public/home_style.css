@@ -1,0 +1,103 @@
+html {
+  font-size: 16px; }
+
+body {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #d5d5d5;
+  text-align: center;
+  line-height: 1.5em; }
+
+a {
+  text-decoration: none;
+  color: #37374c;
+  font-weight: 500; }
+
+header {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #010f23; }
+
+main {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+  box-shadow: 0px 0px 8px 2px rgba(55, 55, 76, 0.75); }
+
+footer {
+  margin-top: 1.5rem;
+  font-size: .85rem;
+  font-weight: 300;
+  color: #010f23; }
+  footer a {
+    color: #010f23;
+    font-weight: 400; }
+
+#api-input {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem; }
+  #api-input button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px groove #00005b;
+    color: #00005b;
+    background-color: white;
+    margin-top: .75rem; }
+  #api-input form input, #api-input form select {
+    font-weight: 300;
+    font-size: .85rem;
+    border-radius: 5px;
+    border: 1px inset #00005b;
+    padding: 5px;
+    padding-left: 7px; }
+
+#api-output {
+  min-width: 470px;
+  min-height: 175px;
+  padding: .75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fcfcff;
+  border: 1px solid #00005b;
+  /*H4 label and H3 data*/
+  /*Div for each label/data set*/ }
+  #api-output h4, #api-output h3, #api-output h2 {
+    margin: 0 0 0 0; }
+  #api-output .spacer-block {
+    height: 1.5em; }
+  #api-output .error-display {
+    color: #db0611; }
+    #api-output .error-display h4 {
+      font-size: 1.25em;
+      line-height: 1.25em; }
+    #api-output .error-display h3 {
+      font-size: 1.5em;
+      line-height: 1.5em; }
+  #api-output .data-display h3 {
+    color: #00005b;
+    font-size: 1.4em;
+    line-height: 1.4em; }
+    #api-output .data-display h3 .fas {
+      padding: 0 .5em 0 .5em; }
+  #api-output .data-display h4 {
+    display: inline-block;
+    color: #37374c;
+    font-size: 1.2em;
+    line-height: 1.2em; }
+  #api-output a {
+    text-decoration: none; }
+
+#api-link {
+  font-size: .9rem; }
