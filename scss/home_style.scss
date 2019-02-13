@@ -1,0 +1,115 @@
+@import 'main';
+
+// API Input area - current time button and date-input form
+#api-input {
+  
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  //Submit button
+  button {
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px groove $blue-dark-color;
+    color: $blue-dark-color;
+    background-color: white;
+    margin-top: .75rem;
+  }
+  
+  //Number/unit form
+  form {
+
+    input, select {
+      font-weight: 300;
+      font-size: .85rem;
+      border-radius: 5px;
+      border: 1px inset $blue-dark-color;
+      padding: 5px;
+      padding-left: 7px;
+    }  
+  }
+
+}
+
+// API Output window
+#api-output{
+  
+  min-width: 470px;
+  min-height: 175px;
+  padding: .75rem;
+  margin-bottom: 1rem;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 10px;
+  background-color: #fcfcff; //#f9f9ff; //#f4f4ff; //rgb(230,230,230);
+  border: 1px solid $blue-dark-color;
+  
+  /*H4 label and H3 data*/
+  h4, h3, h2{
+    margin: 0 0 0 0;
+  }
+
+  /*Div for each label/data set*/
+  .spacer-block{
+    height: 1.5em;
+  }
+  
+
+  //Display for error
+  .error-display {
+    color: #db0611;
+    
+    h4{
+      font-size: 1.25em;
+      line-height: 1.25em;
+    }
+    
+    h3{
+      font-size: 1.5em;
+      line-height: 1.5em;
+    }
+  }
+  
+  .data-display {
+    
+    
+    //Data Short
+    h3{
+      color: #00005b;
+      font-size: 1.4em;
+      line-height: 1.4em;
+      
+      //Blank spacer around fontawesome icon
+      .fas {
+       padding: 0 .5em 0 .5em;
+      }
+    }
+    
+    //Data String
+    h4{
+      display: inline-block;
+      color: #37374c;
+      font-size: 1.2em;
+      line-height: 1.2em;
+      
+      
+    }
+    
+    
+  }
+  
+  a {
+    text-decoration: none;
+  }
+ 
+}
+
+//Link to API information
+#api-link {
+  font-size: .9rem;
+}

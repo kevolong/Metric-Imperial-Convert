@@ -1,0 +1,31 @@
+@import 'main';
+
+#api-doc {
+  
+  @media only screen and (max-width: 325px){ min-width: 300px; }
+  
+  @media only screen and (min-width: 326px) and (max-width: 479px){ min-width: 425px; }
+
+  @media only screen and (min-width: 480px) and (max-width: 767px){ min-width: 475px; }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px){ min-width: 725px; }
+
+  @media only screen and (min-width: 992px) and (max-width: 1999px){ min-width: 775px; }
+}
+
+p, h4 {
+  
+  text-align: left;
+}
+
+li { 
+  text-align: left;
+}
+
+.tabbed {
+  margin-left: 1.5em;
+}
+
+.double-tabbed {
+  margin-left: 3em;
+}
